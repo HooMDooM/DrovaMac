@@ -1,0 +1,35 @@
+name: Ошибка / Bug report
+description: Проблема с запуском, подключением или трансляцией
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Версия приложения
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Mac и версия macOS
+      placeholder: MacBook Air M2, macOS 15.7
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что происходит и как повторить
+      description: Ожидаемый результат, фактическое поведение и шаги.
+    validations:
+      required: true
+  - type: textarea
+    id: streaming
+    attributes:
+      label: Настройки трансляции и сеть
+      description: Кодек, разрешение, FPS, битрейт; Wi-Fi или Ethernet.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Скриншоты
+      description: Скройте почту, имя, баланс, пароли и токены. Не публикуйте необработанные журналы.
