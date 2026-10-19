@@ -27,13 +27,16 @@ This repository distributes **compiled applications, screenshots and documentati
 3. Launch Drova and sign in to your Drova account.
 4. Select a game and an available station.
 
-Version 1.0.0 is ad-hoc signed, without Apple Developer ID or notarization. After the first launch attempt, macOS may require **System Settings → Privacy & Security → Open Anyway**. Approve only if you trust the download. [Apple's instructions](https://support.apple.com/en-us/102445).
+The current app is **Developer ID signed and notarized by Apple**. Its signature, stapled notarization ticket and Gatekeeper assessment have been verified. There is no need to disable macOS security protections.
 
 Choose the **Drova DMG or ZIP**, not GitHub's automatic **Source code** archives, which contain this repository's documentation.
 
 ## Features
 
 - Searchable game catalog, city filters and station selection.
+- Favorite games and stations, station status notifications.
+- Station hardware information, distance from your selected city and saved ping measurements.
+- Optional macOS location detection; manual city selection is also available.
 - 720p, 1080p and 4K; H.264, HEVC and hardware-supported AV1.
 - Server FPS, 10–70 Mbps bitrate limits, compression quality and frame pacing.
 - Keyboard, mouse, compatible macOS gamepads and fullscreen.
@@ -45,19 +48,20 @@ Actual capabilities depend on the Mac, station and connection. Full Windows feat
 
 ![Streaming settings](assets/screenshots/settings.png)
 
-Account details are hidden in screenshots. Catalog and station availability change over time. The application interface is currently in Russian.
+Screenshots show the first release with account details hidden. The updated app also includes favorites, hardware information and station distances. Catalog and station availability change over time. The application interface is currently in Russian.
 
 ## Requirements
 
 macOS 14 or later, Apple Silicon or Intel, a Drova account, available service time and an internet connection. AV1 requires hardware support.
 
-App launch was checked on Apple Silicon. Intel was compiled but has not been tested on a physical Intel Mac. A complete streaming session was not part of this release preparation.
+The signature, stapled Apple notarization ticket, Gatekeeper acceptance and installer integrity have been checked. A complete streaming session and a physical Intel Mac test were not part of this release preparation.
 
 ## Shortcuts
 
 | Shortcut | Action |
 |---|---|
 | Esc twice | Release mouse capture |
+| ⌘ R | Refresh catalog and stations |
 | ⌘ , | Stream settings |
 | ⌘ F | Fullscreen |
 | ⌘ I | Statistics |
