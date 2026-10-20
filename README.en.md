@@ -20,7 +20,7 @@ An unofficial native macOS client for [Drova](https://drova.io). Browse games an
 
 This repository distributes **compiled applications, screenshots and documentation only**. Application source code is not published.
 
-**Version 1.0.1:** faster menus, a performance mode, new filters, fixes to in-stream settings and a color range selector. [Full changelog in Russian](CHANGELOG.md).
+**Version 1.0.2:** hardware details on station cards, fixes to the settings panel and remote cursor, and optional session keep-alive after disconnecting. [Full changelog in Russian](CHANGELOG.md).
 
 ## Install
 
@@ -38,20 +38,20 @@ Choose the **Drova DMG or ZIP**, not GitHub's automatic **Source code** archives
 - Searchable catalog with full cover images, labeled Metacritic scores and separate launcher filters.
 - Station filters for desktop access and a selected game; improved back navigation.
 - Favorite games and stations, station status notifications.
-- Station hardware information, distance from your selected city and saved ping measurements.
+- GPU details and hardware badges directly on station cards, distance from your selected city and saved ping measurements.
 - Optional macOS location detection; manual city selection is also available.
 - 720p and 1080p; H.264, HEVC and hardware-supported AV1.
 - Automatic, limited or full color range, adjustable during a stream.
 - Cached cover images and a menu performance mode; cover images can be disabled.
 - Server FPS, 10–70 Mbps bitrate limits, compression quality and frame pacing.
 - Keyboard, mouse, compatible macOS gamepads and fullscreen.
-- Audio buffering, stream statistics and session reconnection.
+- Audio buffering, stream statistics, session reconnection and optional keep-alive after disconnecting.
 
 Actual capabilities depend on the Mac, station and connection. Full Windows feature parity is not claimed: UDP green/yellow, microphone forwarding and external broadcasting are not in this release's supported feature list.
 
 ![Stations](assets/screenshots/servers.png)
 
-Screenshots show the first release with account details hidden. Version 1.0.1 updates game cards, filters and settings; see the [changelog](CHANGELOG.md). Catalog and station availability change over time. The application interface is currently in Russian.
+Screenshots show the first release with account details hidden. Versions 1.0.1–1.0.2 update game and station cards, filters and settings; see the [changelog](CHANGELOG.md). Catalog and station availability change over time. The application interface is currently in Russian.
 
 ## Requirements
 
@@ -73,9 +73,9 @@ The signature, stapled Apple notarization ticket, Gatekeeper acceptance and inst
 | ⌘ K | Remote on-screen keyboard |
 | ⌘ W | End / disconnect dialog |
 
-Stream shortcuts also work with a Russian keyboard layout. Keyboard input is not forwarded to the game while settings are open.
+Stream shortcuts also work with a Russian keyboard layout. Mouse and keyboard input are not forwarded to the game while settings are open.
 
-**Disconnect keeps the remote session active.** Choose **Завершить / End** to end it. Pricing and time accounting are controlled by Drova.
+**Disconnect closes the stream without requesting that the game session end.** The optional **«Держать сессию после „Отключиться“»** setting keeps the session alive without streaming, for example when using Parsec. It is off by default and works while the Drova app remains open. **Station time continues to be charged.** Choose **Завершить / End** to end the session. Pricing and time accounting are controlled by Drova.
 
 ## Updates
 
