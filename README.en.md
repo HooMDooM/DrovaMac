@@ -8,7 +8,7 @@
 
 macOS 14+ · Apple Silicon + Intel · Universal
 
-### [Download DMG](https://github.com/HooMDooM/DrovaMac/releases/latest/download/Drova-macOS-universal.dmg) · [Download ZIP](https://github.com/HooMDooM/DrovaMac/releases/latest/download/Drova-macOS-universal.zip)
+### [Download DMG · 1.0.7](https://github.com/HooMDooM/DrovaMac/releases/latest/download/Drova-macOS-universal.dmg) · [Download ZIP · 1.0.7](https://github.com/HooMDooM/DrovaMac/releases/latest/download/Drova-macOS-universal.zip)
 
 [Русский](README.md) · [Releases](https://github.com/HooMDooM/DrovaMac/releases) · [Report an issue](https://github.com/HooMDooM/DrovaMac/issues/new/choose)
 
@@ -20,11 +20,11 @@ An unofficial native macOS client for [Drova](https://drova.io). Browse games an
 
 This repository distributes **compiled applications, screenshots and documentation only**. Application source code is not published.
 
-**Version 1.0.2:** hardware details on station cards, fixes to the settings panel and remote cursor, and optional session keep-alive after disconnecting. [Full changelog in Russian](CHANGELOG.md).
+**Version 1.0.7:** updated TCP receive setup, local stream diagnostics with ⌘L lag markers, and cursor fixes after reconnecting. Includes all changes from versions 1.0.3–1.0.7. [Full changelog in Russian](CHANGELOG.md).
 
 ## Install
 
-1. Download and open the DMG.
+1. Download and open the 1.0.7 DMG.
 2. Drag **Drova.app** to **Applications**.
 3. Launch Drova and sign in to your Drova account.
 4. Select a game and an available station.
@@ -44,14 +44,16 @@ Choose the **Drova DMG or ZIP**, not GitHub's automatic **Source code** archives
 - Automatic, limited or full color range, adjustable during a stream.
 - Cached cover images and a menu performance mode; cover images can be disabled.
 - Server FPS, 10–70 Mbps bitrate limits, compression quality and frame pacing.
-- Keyboard, mouse, compatible macOS gamepads and fullscreen.
+- Keyboard, mouse, compatible macOS gamepads, fullscreen and an always-visible cursor option.
+- A sidebar card that brings the active stream window forward.
+- Local stream diagnostics with video, audio and TCP metrics; ⌘L adds a lag marker.
 - Audio buffering, stream statistics, session reconnection and optional keep-alive after disconnecting.
 
 Actual capabilities depend on the Mac, station and connection. Full Windows feature parity is not claimed: UDP green/yellow, microphone forwarding and external broadcasting are not in this release's supported feature list.
 
 ![Stations](assets/screenshots/servers.png)
 
-Screenshots show the first release with account details hidden. Versions 1.0.1–1.0.2 update game and station cards, filters and settings; see the [changelog](CHANGELOG.md). Catalog and station availability change over time. The application interface is currently in Russian.
+Screenshots show the first release with account details hidden. Later versions update game and station cards, filters and settings; see the [changelog](CHANGELOG.md). Catalog and station availability change over time. The application interface is currently in Russian.
 
 ## Requirements
 
@@ -69,6 +71,7 @@ The signature, stapled Apple notarization ticket, Gatekeeper acceptance and inst
 | Esc in settings | Close the settings panel |
 | ⌘ F | Fullscreen |
 | ⌘ I | Statistics |
+| ⌘ L | Mark a lag event in the stream log |
 | ⌘ M | Mute / unmute |
 | ⌘ K | Remote on-screen keyboard |
 | ⌘ W | End / disconnect dialog |

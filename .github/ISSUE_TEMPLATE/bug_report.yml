@@ -6,7 +6,7 @@ body:
     id: version
     attributes:
       label: Версия приложения
-      placeholder: 1.0.2
+      placeholder: 1.0.7
     validations:
       required: true
   - type: input
